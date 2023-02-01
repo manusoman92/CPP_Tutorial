@@ -1,0 +1,13 @@
+function are used to avoid repetition of code snippet in program. Function caan invoke in place of particular code snipet need to run.
+
+function syntax
+
+return_type FunctionName(type parameter_1,type parameter_2, ...)
+
+if function has no parameter empty parantheses is enough
+
+if function not return any type then void will be the return type of that function
+
+Function declaration should be in header file and definition in cpp file, inoder to reuse the that function in another source files
+
+Function are extern by default.
