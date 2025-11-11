@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+project(TemplateProgramming)
+include_directories(include)
+file(GLOB SOURCES "sources/*.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
