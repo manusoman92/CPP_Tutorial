@@ -9,4 +9,6 @@ T Sum(T a, T b) {
 }
 
 template char Sum(char a, char b); // Explicit instantiation for char type
+
+
 #endif
