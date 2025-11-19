@@ -75,3 +75,32 @@ int main(){
     delete q;
     return 0;
 }
+
+
+Non template arguments
+-> Template can have non type arguments
+-> Must be constant expression
+-> Used for array size, integral values etc.
+-> Syntax:
+template<typename T, int size>
+ReturnType FunctionName(T (&array)[size]) {
+    // Function implementation
+}
+#include <iostream>                 
+template<typename T, int size>
+T SumArray(T (&array)[size]) {
+    T sum = 0;
+    for(int i = 0; i < size; ++i) {
+        sum += array[i];
+    }
+    return sum;
+}       
+int main(){
+    int arrInt[] = {1, 2, 3, 4, 5};
+    std::cout << "Sum of int array =" << SumArray(arrInt) << std::endl; // size is deduced to 5
+
+    double arrDouble[] = {1.5, 2.5, 3.5};
+    std::cout << "Sum of double array =" << SumArray(arrDouble) << std::endl; // size is deduced to 3
+
+    return 0;
+}
