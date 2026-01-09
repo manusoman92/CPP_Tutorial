@@ -26,6 +26,13 @@ int main(){
     delete res;
     delete p;
     delete q;
+
+    int arrInt[] = {1, 2, 3, 4, 5};
+    std::cout << "Sum of int array =" << SumArray(arrInt) << std::endl; // size is deduced to 5
+
+    double arrDouble[] = {1.5, 2.5, 3.5};
+    std::cout << "Sum of double array =" << SumArray(arrDouble) << std::endl; // size is deduced to 3
+    
     return 0;
 
 
