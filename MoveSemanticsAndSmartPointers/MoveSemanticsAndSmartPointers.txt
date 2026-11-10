@@ -10,3 +10,4 @@ so if one of object destroyed the other copied object will points to dangling po
 
 -> Move operation will be shift the ownership of object to other one and previous one have defined state after 
 move operation (holding pointer will become nullptr)
+
