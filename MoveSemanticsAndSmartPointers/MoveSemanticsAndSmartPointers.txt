@@ -1,0 +1,13 @@
+Move Semantics And Smart Pointers
+
+-> Smart Pointers are Template class objects , which can hold dynamic pointers 
+and will be deallocate when object goes out of scope
+
+-> Smart pointers usually not allows copy and assignment opertation , why beacuse 
+if the tempate class doesn't define the copy and assignement operations , the compiler will define these methods with shallow copy
+so if one of object destroyed the other copied object will points to dangling pointer.
+
+
+-> Move operation will be shift the ownership of object to other one and previous one have defined state after 
+move operation (holding pointer will become nullptr)
+
